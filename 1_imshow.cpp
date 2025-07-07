@@ -6,15 +6,13 @@
 #include <iostream>
 
 int main() {
-
     cv::Mat image = cv::imread("resourses/apple.jpeg");
         if (image.empty()) {
         std::cerr << "==== Could not open or find the image! ====" << std::endl;
         return -1;
     }
-
     cv::imshow("Display window", image);
     cv::waitKey(0);
-    //cv::destroyAllWindows();
+    cv::destroyAllWindows();
     return 0;
 }
