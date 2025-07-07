@@ -12,18 +12,22 @@ int main() {
         std::cerr << "==== Could not open or find the image! ====" << std::endl;
         return -1;
     }
+    cv::imshow("Original Image", image);
 
     cv::Mat bilateralImg, gaussImg, medianImg;
-    
-    cv::bilateralFilter(image, bilateralImg, 15, 50, 30);
-    cv::GaussianBlur(image, gaussImg, cv::Size(15, 15), 0);
-    cv::medianBlur(image, medianImg, 15);
 
-    cv::imshow("Original Image", image);
-    cv::imshow("bilateral filtered Image", bilateralImg);
-    cv::imshow("Gauss fblur Image", gaussImg);
-    cv::imshow("Median fblur Image", medianImg);
-
+    for (int d = 5; d < 26; d += 6){
+        std::cout << "kernel is " << d << "\n";
+        cv::bilateralFilter(image, bilateralImg, d, 50, 30);
+        cv::GaussianBlur(image, gaussImg, cv::Size(d, d), 0);
+        cv::medianBlur(image, medianImg, d);
+        
+        cv::imshow("bilateral filtered Image", bilateralImg);
+        cv::imshow("Gauss fblur Image", gaussImg);
+        cv::imshow("Median fblur Image", medianImg);
+        cv::waitKey(0);
+    }
+   
     cv::waitKey(0);
     // cv::destroyAllWindows(); 
     return 0;
