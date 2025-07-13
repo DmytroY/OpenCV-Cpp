@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    cv::Mat mask = cv::Mat::zeros(cv::Size(600, 600), CV_8SC3);
+    cv::Mat mask = cv::Mat::zeros(cv::Size(600, 600), CV_8UC3);
     cv::namedWindow("mask", cv::WINDOW_AUTOSIZE);
     int shift;
     std::string text;
