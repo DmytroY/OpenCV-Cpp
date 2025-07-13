@@ -20,3 +20,5 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 1-4-filted2D.cpp - convolution with custom kernels. Blur, edge detection, sharpness enhancement, motion blur, e.t.c.
 ### 2. Drawing
 * 2-1-rectangle.cpp - drawing rectangles
+* 2-2-circle-line.cpp - drawing circles, lines and arrowed lines
+* 2-3-clipline.cpp - functions which returns true if line intersect rectangle area
