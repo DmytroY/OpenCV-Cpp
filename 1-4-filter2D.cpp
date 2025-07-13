@@ -13,9 +13,14 @@ int main(){
 
     cv::Mat_<float> kernel(3,3);
     // detecting edges
-    // kernel << -1,  1, -1,
-    //            1,  0,  1,
-    //           -1,  1, -1;
+    kernel << -1,  1, -1,
+               1,  0,  1,
+              -1,  1, -1;
+
+    // laplacian - more sharp edge detection
+    // kernel << 0,  1,  0, 
+    //           1, -4,  1,
+    //           0,  1,  0;
 
     // enhance sharpness
     // kernel << -1,  1, -1,
@@ -37,10 +42,13 @@ int main(){
     //           -1,   0,  1,
     //            0,   1,  1;
 
+
+
     // motion blur
-    kernel << 0.33,    0,    0, 
-              0,    0.33,    0,
-              0,    0,    0.33;
+    // kernel << 0.33,    0,    0, 
+    //           0,    0.33,    0,
+    //           0,    0,    0.33;
+
 
     cv::namedWindow("image", cv::WINDOW_NORMAL);
     cv::namedWindow("filter2D", cv::WINDOW_NORMAL);

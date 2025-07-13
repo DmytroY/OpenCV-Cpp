@@ -3,10 +3,12 @@
 int main() {
     int dx{0}, dy{0}, kernel{3};
     double scale{1.0}, delta{0};
-    cv::Mat in_image, out_image;
+    cv::Mat in_image, sobel_img, lapl_img;
     in_image = cv::imread("resourses/apple.jpeg");
     cv::namedWindow("Original image", cv::WINDOW_NORMAL);
     cv::namedWindow("Sobel operator", cv::WINDOW_NORMAL);
+    cv::namedWindow("Laplacian", cv::WINDOW_NORMAL);
+
     cv::imshow("Original image", in_image);
 
     while(true) {
@@ -47,8 +49,11 @@ int main() {
         default:
             break;
         }
-    cv::Sobel(in_image, out_image, -1, dx, dy, kernel, scale, delta );
-    cv::imshow("Sobel operator", out_image);
+    cv::Sobel(in_image, sobel_img, -1, dx, dy, kernel, scale, delta );
+    cv::imshow("Sobel operator", sobel_img);
+
+    cv::Laplacian(in_image, lapl_img, -1, 1, 1, 0);
+    cv::imshow("Laplacian", lapl_img);
     }
 
     return 0;
