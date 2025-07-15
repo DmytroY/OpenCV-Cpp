@@ -18,8 +18,9 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 1-2-erosion-dilation.cpp - erosion and delation of image with different kernel size.
 * 1-3-sobel_laplace.cpp - Sobel operator to detect the edges. You can investigate the influence of the arguments (dx, dy, kernel, scale and delta) on the result and compare with laplacian oparator result.
 * 1-4-filted2D.cpp - convolution with custom kernels. Blur, edge detection, sharpness enhancement, motion blur, e.t.c.
-### 2. Drawing
+### 2. Drawing and text
 * 2-1-rectangle.cpp - drawing rectangles
 * 2-2-circle-line.cpp - drawing circles, lines and arrowed lines
 * 2-3-clipline.cpp - functions which returns true if line intersect rectangle area
 * 2-4-ellipse.cpp - usage of cv::ellipse() and cv::ellipse2Poly()
+* 2-5-text.cpp - usage of putText() and getTextSize()
