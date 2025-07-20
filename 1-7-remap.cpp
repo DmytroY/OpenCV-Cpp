@@ -11,11 +11,12 @@ int main(){
                                           33, 66, 99 );
 
     // destination image can be any size
+    cv::Mat dst;
+
     // here we will map from 2x3 to 3x2
     // mapping matrices
     cv::Mat mapX(3, 2, CV_32FC1);
     cv::Mat mapY(3, 2, CV_32FC1);
-
     mapX.at<float>(0, 0) = 2; mapY.at<float>(0,0) = 0;
     mapX.at<float>(1, 0) = 1; mapY.at<float>(0,0) = 0;
     mapX.at<float>(2, 0) = 0; mapY.at<float>(0,0) = 0;
@@ -27,7 +28,9 @@ int main(){
     mapX.at<float>(1, 1) = 1; mapY.at<float>(1,1) = 1;
     mapX.at<float>(2, 1) = 0; mapY.at<float>(2,1) = 1;
 
-    cv::Mat dst;
+
+
+    
     cv::remap(src, dst, mapX, mapY, cv::INTER_LINEAR);
 
     std::cout << src << "\n";
