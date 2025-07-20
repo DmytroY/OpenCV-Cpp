@@ -20,7 +20,10 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 1-3-sobel_laplace.cpp - Sobel operator to detect the edges. You can investigate the influence of the arguments (dx, dy, kernel, scale and delta) on the result and compare with laplacian oparator result.
 * 1-4-filted2D.cpp - convolution with custom kernels. Blur, edge detection, sharpness enhancement, motion blur, e.t.c.
 * 1-5-resize.cpp - resize image by resulting size or by proportions
-* 1-6-perspective.cpp - geometr
+* 1-6-perspective.cpp - changin geometry of image based on moving of key points.
+* 1-7-remap.cpp - creating by pixel matrice of rules for transform source image to resulting image by moving pixels or calculating destination pixel based on source pixels group.
+* 1-8-comvertMaps - preparing map of image transformation for fast remap 
+
 ### 2. Drawing and text
 * 2-1-rectangle.cpp - drawing rectangles
 * 2-2-circle-line.cpp - drawing circles, lines and arrowed lines
