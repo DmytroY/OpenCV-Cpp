@@ -3,9 +3,14 @@
 
 int main(){
 
-    // cv::Mat data = cv::Mat::ones(cv::Size(3, 2), CV_8SC1);
-    // std::cout << "data:\n " << data << "\n";
-    cv::Mat data = cv::imread("resourses/apple.jpeg");
+    cv::Mat data = cv::Mat::zeros(cv::Size(3, 2), CV_8SC1);
+    //data.at<schar>(cv::Point(1, 1)) = 125;
+    data.at<schar>(1, 1) = 125;
+
+    std::cout << "data:\n " << data << "\n";
+ 
+    // cv::Mat data = cv::imread("resourses/apple.jpeg");
+    
     std::cout << "depth: " << data.depth() << "\n";
     std::cout << "type: " << data.type() << "\n";
     std::cout << "size: " << data.size() << "\n";
