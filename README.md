@@ -14,6 +14,7 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 0-1-version.cpp - to check OpenCV successfully installed
 * 0-2-imshow.cpp - open and display image
 * 0-3-img_data.cpp - data parameters: depth of datatype, type of datatype, size of image, channels.
+
 ### 1. Image manipulation
 * 1-1-blures-bilateral.cpp - comparation of bilateral filter, Gauss blur and median blur.
 * 1-2-erosion-dilation.cpp - erosion and delation of image with different kernel size.
@@ -22,7 +23,8 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 1-5-resize.cpp - resize image by resulting size or by proportions
 * 1-6-perspective.cpp - changin geometry of image based on moving of key points.
 * 1-7-remap.cpp - creating by pixel matrice of rules for transform source image to resulting image by moving pixels or calculating destination pixel based on source pixels group.
-* 1-8-comvertMaps - preparing map of image transformation for fast remap 
+* 1-8-comvertMaps - preparing map of image transformation for fast remap
+* 1-9-polar.cpp - transform image from linear to polar coordinates and back
 
 ### 2. Drawing and text
 * 2-1-rectangle.cpp - drawing rectangles
