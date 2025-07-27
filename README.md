@@ -25,6 +25,7 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 1-7-remap.cpp - creating by pixel matrice of rules for transform source image to resulting image by moving pixels or calculating destination pixel based on source pixels group.
 * 1-8-comvertMaps - preparing map of image transformation for fast remap
 * 1-9-polar.cpp - transform image from linear to polar coordinates and back
+* 1-10-crop.cpp - crop image based on left top corner, based on center, based on user selection
 
 ### 2. Drawing and text
 * 2-1-rectangle.cpp - drawing rectangles
