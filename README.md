@@ -15,17 +15,11 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 0-2-imshow.cpp - open and display image
 * 0-3-img_data.cpp - data parameters: depth of datatype, type of datatype, size of image, channels.
 
-### 1. Image manipulation
+### 1. Filtration
 * 1-1-blures-bilateral.cpp - comparation of bilateral filter, Gauss blur and median blur.
 * 1-2-erosion-dilation.cpp - erosion and delation of image with different kernel size.
 * 1-3-sobel_laplace.cpp - Sobel operator to detect the edges. You can investigate the influence of the arguments (dx, dy, kernel, scale and delta) on the result and compare with laplacian oparator result.
 * 1-4-filted2D.cpp - convolution with custom kernels. Blur, edge detection, sharpness enhancement, motion blur, e.t.c.
-* 1-5-resize.cpp - resize image by resulting size or by proportions
-* 1-6-perspective.cpp - changin geometry of image based on moving of key points.
-* 1-7-remap.cpp - creating by pixel matrice of rules for transform source image to resulting image by moving pixels or calculating destination pixel based on source pixels group.
-* 1-8-comvertMaps - preparing map of image transformation for fast remap
-* 1-9-polar.cpp - transform image from linear to polar coordinates and back
-* 1-10-crop.cpp - crop image based on left top corner, based on center, based on user selection
 
 ### 2. Drawing and text
 * 2-1-rectangle.cpp - drawing rectangles
@@ -34,3 +28,14 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 2-4-ellipse.cpp - usage of cv::ellipse() and cv::ellipse2Poly()
 * 2-5-text.cpp - usage of putText() and getTextSize()
 * 2-6-poly.cpp - drawing polygon line and filled polygons
+
+### 3. Geometric
+* 3-1-resize.cpp - resize image by resulting size or by proportions
+* 3-2-perspective.cpp - changin geometry of image based on moving of key points.
+* 3-3-remap.cpp - creating by pixel matrice of rules for transform source image to resulting image by moving pixels or calculating destination pixel based on source pixels group.
+* 3-4-comvertMaps - preparing map of image transformation for fast remap
+* 3-5-polar.cpp - transform image from linear to polar coordinates and back
+* 3-6-crop.cpp - crop image based on left top corner, based on center, based on user selection
+
+### 4. pixel value manipulation
+* 4-1-trhreshold.cpp - intensity based manipulation
