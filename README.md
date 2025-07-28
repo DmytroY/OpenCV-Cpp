@@ -38,4 +38,6 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 3-6-crop.cpp - crop image based on left top corner, based on center, based on user selection
 
 ### 4. pixel value manipulation
-* 4-1-trhreshold.cpp - intensity based manipulation
+* 4-1-trhreshold.cpp - intensity based manipulation, threshold based on fixed level.
+* 4-2-adaptive_thr.cpp - threshold based on nearest pixels values.
+* 4-3-integral - 

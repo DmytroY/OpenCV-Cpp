@@ -10,8 +10,8 @@ int main(){
     cv::Mat out1;
     // cv::threshold(src, out1, 100, 200, cv::THRESH_TRUNC);
 
-    cv::Mat src = cv::imread("resourses/apple.jpeg", cv::IMREAD_GRAYSCALE);
-    cv::threshold(src, out1, 200, 255, cv::THRESH_BINARY);
+    cv::Mat src = cv::imread("resourses/apple.jpeg");
+    cv::threshold(src, out1, 240, 255, cv::THRESH_BINARY);
 
     cv::imshow("source", src);
     cv::imshow("out1", out1);
