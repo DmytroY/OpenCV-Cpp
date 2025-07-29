@@ -2,17 +2,24 @@
 #include <iostream>
 
 int main(){
-    cv::Mat src = (cv::Mat_<uchar>(3, 3) << 10,    0,    0,
-                                            0,    255,    0,
-                                            0,    255,    0);
+    cv::Mat src = (cv::Mat_<uchar>(3, 3) << 1,    0,    0,
+                                            0,    2,    0,
+                                            0,    3,    0);
     std::cout << "== Source ==\n";                                    
     std::cout << src << "\n";
     
-    cv::Mat dst;
-    cv::integral(src, dst);
+    cv::Mat intgr, intgr2, intgrt;
 
-    std::cout << "== Result ==\n";                                    
-    std::cout << dst << "\n";
+    cv::integral(src, intgr, intgr2, intgrt);
+
+    std::cout << "== Integral ==\n";                                    
+    std::cout << intgr << "\n\n";
+
+    std::cout << "== Integral of squares ==\n";                                    
+    std::cout << intgr2 << "\n\n";
+
+    std::cout << "== Integral tilt 45 degree ==\n";                                    
+    std::cout << intgrt << "\n\n";
 
     return 0;
 }
