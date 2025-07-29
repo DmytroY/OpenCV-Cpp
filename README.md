@@ -40,4 +40,5 @@ to simplify compilation routine I described those libraries in tasks.json file s
 ### 4. pixel value manipulation
 * 4-1-trhreshold.cpp - intensity based manipulation, threshold based on fixed level.
 * 4-2-adaptive_thr.cpp - threshold based on nearest pixels values.
-* 4-3-integral - 
+* 4-3-integral - sum of pixel values, can be used for detecting bright regions
+* 4-4-distance.cpp - using distanceTransform to specify regions nearest to 0-value pixels
