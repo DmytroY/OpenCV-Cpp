@@ -14,6 +14,17 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 0-1-version.cpp - to check OpenCV successfully installed
 * 0-2-imshow.cpp - open and display image
 * 0-3-img_data.cpp - data parameters: depth of datatype, type of datatype, size of image, channels.
+A Mapping of Type to Numbers in OpenCV
+
+| | C1 | C2 | C3 | C4
+|---|---|---|---|---|
+|CV_8U|	0|	8|	16|	24
+|CV_8S|	1|	9|	17|	25
+|CV_16U| 2|	10|	18|	26
+|CV_16S| 3|	11|	19|	27
+|CV_32S| 4|	12|	20|	28
+|CV_32F| 5|	13|	21|	29
+|CV_64F| 6|	14|	22|	30
 
 ### 1. Filtration
 * 1-1-blures-bilateral.cpp - comparation of bilateral filter, Gauss blur and median blur.
@@ -42,3 +53,4 @@ to simplify compilation routine I described those libraries in tasks.json file s
 * 4-2-adaptive_thr.cpp - threshold based on nearest pixels values.
 * 4-3-integral - sum of pixel values, can be used for detecting bright regions
 * 4-4-distance.cpp - using distanceTransform to specify regions nearest to 0-value pixels
+* 4-5-blend.cpp - blending two images, manipulating with weights to make part of image transparent.
