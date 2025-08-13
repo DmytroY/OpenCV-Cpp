@@ -54,3 +54,4 @@ A Mapping of Type to Numbers in OpenCV
 * 4-3-integral - sum of pixel values, can be used for detecting bright regions
 * 4-4-distance.cpp - using distanceTransform to specify regions nearest to 0-value pixels
 * 4-5-blend.cpp - blending two images, manipulating with weights to make part of image transparent.
+* 4-6-grabcut - defining foreground/background with grabcut algorothm, 4-6-grabcut-array.cpp is an example on simple array data,  4-6-grabcut-picture.cpp is using grabcut with real picture
