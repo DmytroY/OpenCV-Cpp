@@ -58,4 +58,5 @@ A Mapping of Type to Numbers in OpenCV
 * 4-7-floodfill.cpp flood image based on pixel color
 
 ### 5. Color models
-* 5-1-cvtcolor.cpp - converting to another coor model
+* 5-1-cvtcolor.cpp - converting to another color model
+* 5-2-color2plane.cpp - convertation from BRG to YUV, split YUV to separate channels, assemble it back to BGR
