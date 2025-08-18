@@ -61,3 +61,4 @@ A Mapping of Type to Numbers in OpenCV
 * 5-1-cvtcolor.cpp - converting to another color model
 * 5-2-color2plane.cpp - convertation from BRG to YUV, split YUV to separate channels, assemble it back to BGR
 * 5-3-bayer.cpp - convertion from Bayer color filter format (used by most camera censors) to standard BGR.
+* 5-4-colormap.cpp - convert grayscale image to colored one so human eye can easily distinguish image elements.
