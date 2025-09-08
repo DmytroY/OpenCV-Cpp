@@ -63,3 +63,5 @@ A Mapping of Type to Numbers in OpenCV
 * 5-3-bayer.cpp - convertion from Bayer color filter format (used by most camera censors) to standard BGR.
 * 5-4-colormap.cpp - convert grayscale image to colored one so human eye can easily distinguish image elements.
 * 5-5-equalizeH.cpp - using equalizeHist() to enhance contrast and fix white ballance.
+* 5-6-calchist_1ch.cpp - calculating and drawing histogram for one-channel grayscale image
+* 5-6-calchist_3ch.cpp - calculating and drawing histogram for RGB
