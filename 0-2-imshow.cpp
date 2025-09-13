@@ -7,7 +7,8 @@
 
 int main() {
     cv::Mat image = cv::imread("resourses/apple.jpeg");
-        if (image.empty()) {
+    
+    if (image.empty()) {
         std::cerr << "==== Could not open or find the image! ====" << std::endl;
         return -1;
     }

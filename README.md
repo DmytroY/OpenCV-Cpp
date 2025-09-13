@@ -26,6 +26,8 @@ A Mapping of Type to Numbers in OpenCV
 |CV_32F| 5|	13|	21|	29
 |CV_64F| 6|	14|	22|	30
 
+* 0-4-comLineParser.cpp - parse comand line arguments to provide path to image file
+
 ### 1. Filtration
 * 1-1-blures-bilateral.cpp - comparation of bilateral filter, Gauss blur and median blur.
 * 1-2-erosion-dilation.cpp - erosion and delation of image with different kernel size.
@@ -65,3 +67,4 @@ A Mapping of Type to Numbers in OpenCV
 * 5-5-equalizeH.cpp - using equalizeHist() to enhance contrast and fix white ballance.
 * 5-6-calchist_1ch.cpp - calculating and drawing histogram for one-channel grayscale image
 * 5-6-calchist_3ch.cpp - calculating and drawing histogram for RGB
+* 5-7-compareH.cpp - comparing histohrams of 2 images
